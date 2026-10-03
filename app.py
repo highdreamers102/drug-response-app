@@ -23,7 +23,7 @@ if page == "Explorer":
     filtered = df[df["Condition"].isin(cond)]
     st.write(f"{len(filtered)} Patients ")
     fig = px.box(filtered,x = "Drug_Name", y = "Improvement_Score")
-    st.plotly_chart(fig, use_container_width = True)
+    st.plotly_chart(fig, width="stretch")
 
 elif page == "Side-effects Predictor ":
     st.title("Side-effects Predictor")
