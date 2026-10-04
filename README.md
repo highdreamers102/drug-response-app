@@ -7,8 +7,11 @@ An end-to-end data science project that tests whether patient and drug features 
 ## Key findings
 - ANOVA found no significant difference in `Improvement_Score` across drugs (p = 0.947), conditions (p = 0.719) or genders (p = 0.771).
 - Linear Regression and Random Forest scored R² below zero in 5-fold cross-validation, i.e. worse than always predicting the mean.
-- A control run with the target shuffled scored the same as the real data, so the target carries no learnable signal.
+- A control run with the target shuffled scored about the same as the real data (all below zero), so the target shows no detectable signal..
 - What the data does support: each drug is tied to 2-3 specific side effects, so the app shows side-effect frequencies per drug.
+
+## Data
+Source: [1000 drugs and side effects](https://www.kaggle.com/datasets/palakjain9/1000-drugs-and-side-effects). Despite the filename `real_drug_dataset.csv`, the data appears synthetic (see limitations below).
 
 ## App pages
 | Page | What it does |
@@ -41,7 +44,4 @@ The analysis notebook (`notebooks/01_eda.ipynb`) also needs scikit-learn, SciPy,
 Python, pandas, SciPy, scikit-learn, Plotly, Streamlit
 
 ## Author
-Tushar - [LinkedIn](https://www.linkedin.com/feed/)
-
-## Source 
-Kaggle dataset
+Tushar - [LinkedIn](www.linkedin.com/in/tushar-bhardwaj-b89973422)

@@ -62,8 +62,10 @@ else:
             "MAE": [1.155, 1.168, 1.201]
     }))
 
-    st.write("No model beat the baseline. A control run with the target shuffled scored "
-             "the same as the real data, so the target carries no learnable signal.")
+    st.write("No model beat the baseline." \
+    " A control run with the target shuffled scored the same as the real data,"
+    " so the target carries no learnable signal."
+            )
 
     st.subheader("3. Data limitations")
     st.markdown("""
