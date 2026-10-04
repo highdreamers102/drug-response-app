@@ -44,4 +44,4 @@ The analysis notebook (`notebooks/01_eda.ipynb`) also needs scikit-learn, SciPy,
 Python, pandas, SciPy, scikit-learn, Plotly, Streamlit
 
 ## Author
-Tushar - [LinkedIn](www.linkedin.com/in/tushar-bhardwaj-b89973422)
+Tushar - [LinkedIn](https://www.linkedin.com/in/tushar-bhardwaj-b89973422)
