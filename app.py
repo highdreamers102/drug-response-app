@@ -11,7 +11,7 @@ df = Load_data()
 
 page = st.sidebar.radio(
     "Page",
-    ["Explorer","Side-effects Predictor ","Improvement Estimator","Methodology"]
+    ["Explorer","Side-effects Predictor","Improvement Estimator","Methodology"]
 )
 
 if page == "Explorer":
@@ -25,7 +25,7 @@ if page == "Explorer":
     fig = px.box(filtered,x = "Drug_Name", y = "Improvement_Score")
     st.plotly_chart(fig, width="stretch")
 
-elif page == "Side-effects Predictor ":
+elif page == "Side-effects Predictor":
     st.title("Side-effects Predictor")
     drug = st.selectbox("Drug", sorted(df["Drug_Name"].unique()))
     sub = df[df["Drug_Name"] == drug]
@@ -62,10 +62,10 @@ else:
             "MAE": [1.155, 1.168, 1.201]
     }))
 
-    st.write("No model beat the baseline." \
-    " A control run with the target shuffled scored the same as the real data,"
-    " so the target carries no learnable signal."
-            )
+    st.write(
+    "No model beat the baseline. A control run with the target shuffled "
+    "scored about the same as the real data, so the target shows no detectable signal."
+)
 
     st.subheader("3. Data limitations")
     st.markdown("""
