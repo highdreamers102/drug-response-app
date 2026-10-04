@@ -63,9 +63,9 @@ else:
     }))
 
     st.write(
-    "No model beat the baseline. A control run with the target shuffled "
-    "scored about the same as the real data, so the target shows no detectable signal."
-)
+        "No model beat the baseline. A control run with the target shuffled "
+        "scored about the same as the real data, so the target shows no detectable signal."
+    )
 
     st.subheader("3. Data limitations")
     st.markdown("""
